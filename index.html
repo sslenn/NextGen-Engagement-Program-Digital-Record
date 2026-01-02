@@ -10,20 +10,60 @@
 <body class="scroll-smooth">
 
     <!-- navbar -->
-    <nav class="flex items-center justify-between bg-gray-900 text-white p-5 ">
-        <div>
+    <nav class="bg-gray-900 text-white p-5">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex-shrink-0">
             <img src="./logo/NGB3logo.png" alt="logoNextGen" class="w-16">
-        </div>
-        
-        <div class="flex space-x-6">
+            </div>
+
+            <div class="md:hidden">
+            <button id="menu-btn" class="text-white focus:outline-none p-2">
+                <svg id="hamburger-icon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+                <svg id="close-icon" class="hidden w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            </div>
+
+            <div class="hidden md:flex space-x-6">
             <a href="#Home" class="hover:bg-orange-500 px-3 py-1 rounded">Home</a>
             <a href="#About" class="hover:bg-orange-500 px-3 py-1 rounded">About Nextgen</a>
             <a href="#journey" class="hover:bg-orange-500 px-3 py-1 rounded">Event Journey</a>
             <a href="#people" class="hover:bg-orange-500 px-3 py-1 rounded">Our People</a>
             <a href="#timeline" class="hover:bg-orange-500 px-3 py-1 rounded">Timeline</a>
             <a href="#gallery" class="hover:bg-orange-500 px-3 py-1 rounded">Gallery</a>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden mt-4 bg-gray-800 rounded-lg p-4">
+            <div class="flex flex-col space-y-4">
+            <a href="#Home" class="hover:text-orange-500">Home</a>
+            <a href="#About" class="hover:text-orange-500">About Nextgen</a>
+            <a href="#journey" class="hover:text-orange-500">Event Journey</a>
+            <a href="#people" class="hover:text-orange-500">Our People</a>
+            <a href="#timeline" class="hover:text-orange-500">Timeline</a>
+            <a href="#gallery" class="hover:text-orange-500">Gallery</a>
+            </div>
         </div>
     </nav>
+
+    <script>
+    const btn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    btn.addEventListener('click', () => {
+        // Toggle the menu visibility
+        mobileMenu.classList.toggle('hidden');
+        
+        // Toggle between Hamburger and Close icons
+        hamburgerIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+    });
+    </script>
 
     <!-- hero -->
  
