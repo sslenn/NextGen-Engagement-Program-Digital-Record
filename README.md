@@ -29,6 +29,12 @@ This website presents:
 
 ---
 
+🛠 Technologies Used:
+HTML5
+Tailwind CSS
+JavaScript
+Git & GitHub
+Netlify (deployment)
 
 # Media Credits
 
