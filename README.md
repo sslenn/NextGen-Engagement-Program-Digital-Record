@@ -4,7 +4,7 @@ This repository contains the official website for the NextGen Engagement Program
 The website showcases information about the program, its purpose, milestones, batches, organizers, trainers, and student feedback.
 
 Live Demo
-=> https://nextgenengagementprogrambookrecord.netlify.app
+=> (https://next-gen-engagement-program-digital.vercel.app/)
 
 ---
 
